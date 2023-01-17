@@ -1,40 +1,54 @@
 <!--Matthew Sandberg-->
-<!--Joseph Jess-->
+<!--Prof. Joseph Jess-->
 <!--CS 290-->
 <!--16 JAN 2023-->
 
 
 <!DOCTYPE html>
 <html>
-    <head>    
+    <head>    <!--head of webpage (the tab at the top)-->
+        
+        <!--meta data (info and such), I believe the keywords help with searching but I personally haven't dove into the subject-->
         <meta charset="UTF-8">
         <meta charset="description" content="Crazy Broski">
         <meta charset="keywords" content="HTML">
         <meta charset="author" content="Matthew Sandberg">
         <meta charset="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+        
+        <!--title of the tab-->
         <title>No way! It's a webpage title!?!?!</title>
     </head>
 
-    <body>
-        <article>
-            <header>
+    <body>  <!--body of webpage (what is visible on the webpage)-->
+        <article>   <!--text and such for the body-->
+            <header>    <!--header of this article part of the body-->
+                <!--header of the header of size 1 (1->6,largest->smallest)-->
                 <h1><a id="main">CS 290 HTML</a></h1>
+                <!--paragraph for text-->
                 <p>Thanks to Joseph Jess and W3Schools!</p>
+                <!--anchor for href link resources-->
                 <a href="https://www.w3schools.com/html/">Link to W3Schools for references to some code</a>>
             </header>
 
+            <!--anchor for href link to this spot on the webpage, done for each section-->
             <h2><a id="lists">Lists!</a></h2>
+            
+            <!--Description list, dl opens, dt adds key term to list, dd adds to previous key term/description-->
             <p>Description List!</p>
             <dl>
                 <dt>item term</dt>
-                <dd>description here<br>and here</dd>
+                <dd>description here<br>and here</dd> <!--break acts as another line-->
             </dl>
+            
+            <!--Ordered list, ol opens, li adds to list-->
             <p>Ordered List (Numbers)!</p>
             <ol>
                 <li>item 1</li>
                 <li>item 2</li>
                 <li>item 3</li>
             </ol>
+            
+            <!--Unordered list, ul opens, li adds to list-->
             <p>Unordered List (Bullet Points)!</p>
             <ul>
                 <li>item 1</li>
@@ -43,12 +57,19 @@
             </ul>
             
             <h2><a id="imgs">Images!</a></h2>
-            <br>
-            <img src="/images/lakeside_IG.png" alt="Lakeside"> <!--Relative Path (local file) ***Having issues loading image***-->
-            <br>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Lakeside%2C_AZ.jpg/250px-Lakeside%2C_AZ.jpg" alt="Lakeside"> <!--Absolute Path (web file)-->
+            <br> <!--break for organization-->
             
-            <h2><a id="tbl">Table</a></h2>
+            <!--img for adding images, src to find image source, alt for descripton-->
+            <img src="/images/lakeside_IG.png" alt="Lakeside1"> <!--Relative Path (local file) ***Having issues loading image***-->
+            
+            <br> <!--break for organization-->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Lakeside%2C_AZ.jpg/250px-Lakeside%2C_AZ.jpg" alt="Lakeside2"> <!--Absolute Path (web file)-->
+            
+            <h2><a id="tbl">Table!</a></h2>
+            
+            <!--style changes the style of the table, border adds a border for the table,-->
+            <!--border-collapse allows for the table to not have a bunch of boxes,-->
+            <!--text-align to align the text-->
             <style>
                 table, th, td {
                     border: 1px solid black;
@@ -56,13 +77,19 @@
                     text-align: center;
                 }
             </style>
+            
+            <!--table, style for width and height in px OR %-->
             <table style="width:500px; height:100px">
+                <!--caption for table title-->
                 <caption>This is a table!</caption>
+                <!--table header, tr for table row, td for table description-->
                 <thead>
                     <tr>
+                        <!--colspan for column span, 100% for full length header-->
                         <td colspan="100%">This is the header of the table!</td>
                     </tr>
                 </thead>
+                <!--table body-->
                 <tr>
                     <th>Desc 1</th>
                     <th>Thing</th>
@@ -75,13 +102,16 @@
                     <th>2</th>
                     <th>Ayyy</th>
                 </tr>
+                <!--table footer-->
                 <tfoot>
                     <tr>
+                        <!--colspan for column span, 100% for full length footer-->
                         <td colspan="100%">This is the footer of the table!</td>
                     </tr>
                 </tfoot>
             </table> 
 
+            <!--anchor links for href links for each section-->
             <a href="#main"><br>Go to top</a>
             <a href="#lists"><br>Go to lists</a>
             <a href="#imgs"><br>Go to images</a>
