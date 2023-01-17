@@ -1,0 +1,93 @@
+<!--Matthew Sandberg-->
+<!--Joseph Jess-->
+<!--CS 290-->
+<!--16 JAN 2023-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>    
+        <meta charset="UTF-8">
+        <meta charset="description" content="Crazy Broski">
+        <meta charset="keywords" content="HTML">
+        <meta charset="author" content="Matthew Sandberg">
+        <meta charset="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+        <title>No way! It's a webpage title!?!?!</title>
+    </head>
+
+    <body>
+        <article>
+            <header>
+                <h1><a id="main">CS 290 HTML</a></h1>
+                <p>Thanks to Joseph Jess and W3Schools!</p>
+                <a href="https://www.w3schools.com/html/">Link to W3Schools for references to some code</a>>
+            </header>
+
+            <h2><a id="lists">Lists!</a></h2>
+            <p>Description List!</p>
+            <dl>
+                <dt>item term</dt>
+                <dd>description here<br>and here</dd>
+            </dl>
+            <p>Ordered List (Numbers)!</p>
+            <ol>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ol>
+            <p>Unordered List (Bullet Points)!</p>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ul>
+            
+            <h2><a id="imgs">Images!</a></h2>
+            <br>
+            <img src="/images/lakeside_IG.png" alt="Lakeside"> <!--Relative Path (local file) ***Having issues loading image***-->
+            <br>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Lakeside%2C_AZ.jpg/250px-Lakeside%2C_AZ.jpg" alt="Lakeside"> <!--Absolute Path (web file)-->
+            
+            <h2><a id="tbl">Table</a></h2>
+            <style>
+                table, th, td {
+                    border: 1px solid black;
+                    border-collapse: collapse;
+                    text-align: center;
+                }
+            </style>
+            <table style="width:500px; height:100px">
+                <caption>This is a table!</caption>
+                <thead>
+                    <tr>
+                        <td colspan="100%">This is the header of the table!</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <th>Desc 1</th>
+                    <th>Thing</th>
+                    <th>1</th>
+                    <th>Ayyy</th>
+                </tr>
+                <tr>
+                    <th>Desc 2</th>
+                    <th>Thing</th>
+                    <th>2</th>
+                    <th>Ayyy</th>
+                </tr>
+                <tfoot>
+                    <tr>
+                        <td colspan="100%">This is the footer of the table!</td>
+                    </tr>
+                </tfoot>
+            </table> 
+
+            <a href="#main"><br>Go to top</a>
+            <a href="#lists"><br>Go to lists</a>
+            <a href="#imgs"><br>Go to images</a>
+            <a href="#tbl"><br>Go to table</a>
+
+        </article>
+    </body>
+
+</html>
