@@ -1,0 +1,135 @@
+<!--Matthew Sandberg-->
+<!--Joseph Jess-->
+<!--CS 290-->
+<!--16 JAN 2023-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>    
+        <meta charset="UTF-8">
+        <meta charset="description" content="Crazy Broski">
+        <meta charset="keywords" content="HTML">
+        <meta charset="author" content="Matthew Sandberg">
+        <meta charset="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+        <title>No way! It's a webpage title!?!?!</title>
+    </head>
+
+    <body>
+        <article>
+            <style>
+                .clists{
+                    background-color:red;
+                    color:purple;
+                    font-family: Garamond, serif;
+                    font-size: 12px;
+                    font-style: italic;
+                    font-variant: small-caps;
+                    font-weight: 700;
+                    text-decoration: line-through;
+                }
+                .cimages{
+                    background-color:green;
+                    color:yellow;
+                }
+                .ctables{
+                    background-color:blue;
+                    color:cyan;
+                    font: 40px bold "Times New Roman", Times, serif;
+                    text-decoration: dotted;
+                    line-height: 300%;
+                }
+                #ilist{
+                    color: white;
+                }
+
+                a[weblink]{
+                    background-color: blanchedalmond;
+                }
+                a[weblink=self]{
+                    background-color: rgb(59, 228, 87);
+                }
+            </style>
+
+            <header>
+                <h1><a id="main">CS 290 HTML</a></h1>
+                <p>Thanks to Joseph Jess and W3Schools!</p>
+                <a href="https://www.w3schools.com/html/" weblink>Link to W3Schools for references to some code</a>
+            </header>
+
+            <div class="clists">
+                <h2><a id="lists">Lists!</a></h2>
+                <p id="ilist">Description List!</p>
+                <dl>
+                    <dt>item term</dt>
+                    <dd>description here<br>and here</dd>
+                </dl>
+                <p id="ilist">Ordered List (Numbers)!</p>
+                <ol>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                </ol>
+                <p id="ilist">Unordered List (Bullet Points)!</p>
+                <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                </ul>
+            </div>
+            
+            <div class="cimages">
+                <h2><a id="imgs">Images!</a></h2>
+                <br>
+                <img src="/images/lakeside_IG.png" alt="Lakeside"> <!--Relative Path (local file) ***Having issues loading image***-->
+                <br>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Lakeside%2C_AZ.jpg/250px-Lakeside%2C_AZ.jpg" alt="Lakeside"> <!--Absolute Path (web file)-->
+            </div>
+            
+            <div class="ctables">
+                <h2><a id="tbl">Table!</a></h2>
+                <style>
+                    table, th, td {
+                        border-collapse: collapse;
+                        text-align: center;
+                        border: 1px solid black;
+                        padding: 50px 10px 3px 9px;
+                        margin: 80px 71px 8px 34px;
+                    }
+                </style>
+                <table style="width:500px; height:100px">
+                    <caption>This is a table!</caption>
+                    <thead>
+                        <tr>
+                            <td colspan="100%">This is the header of the table!</td>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <th>Desc 1</th>
+                        <th>Thing</th>
+                        <th>1</th>
+                        <th>Ayyy</th>
+                    </tr>
+                    <tr>
+                        <th>Desc 2</th>
+                        <th>Thing</th>
+                        <th>2</th>
+                        <th>Ayyy</th>
+                    </tr>
+                    <tfoot>
+                        <tr>
+                            <td colspan="100%">This is the footer of the table!</td>
+                        </tr>
+                    </tfoot>
+                </table> 
+            </div>
+
+            <a href="#main" weblink="self"><br>Go to top</a>
+            <a href="#lists" weblink="self"><br>Go to lists</a>
+            <a href="#imgs" weblink="self"><br>Go to images</a>
+            <a href="#tbl" weblink="self"><br>Go to table</a>
+
+        </article>
+    </body>
+
+</html>
