@@ -1,0 +1,143 @@
+<!--Matthew Sandberg-->
+<!--Joseph Jess-->
+<!--CS 290-->
+<!--16 JAN 2023-->
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>           
+        <meta charset="UTF-8">
+        <meta charset="description" content="Crazy Broski">
+        <meta charset="keywords" content="HTML">
+        <meta charset="author" content="Matthew Sandberg">
+        <meta charset="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="style.css"> <!--Clean up by putting styles into another file-->
+
+        <title>No way! It's a webpage title!?!?!</title>
+    </head>
+
+    <body>
+        <article>
+            <header>
+                <h1><a id="main">CS 290 HTML</a></h1>
+                <p>Thanks to Joseph Jess, W3Schools, and Geeks for Geeks!</p>
+                <a href="https://www.w3schools.com/" weblink>Link to W3Schools for references to some code</a>
+                <br>
+                <a href="https://www.geeksforgeeks.org/" weblink>Link to Geeks for Geeks for references to some code</a>
+                <br>
+                <br>
+                <h3><a href="subpage.html" weblink>Link to subpage</a></h3>
+            </header>
+
+            <button type="button" class="collapse"><a href="text/virus.txt" download="virus">Click for free Robux please!!!</a></button>
+            <div class="content">
+                <p>Installing virus.exe... you'll never see this message!!!</p>
+            </div>
+
+            <div class="clists">
+                <h2><a id="lists">Lists!</a></h2>
+                <p id="ilist">Description List!</p>
+                <dl>
+                    <dt>item term</dt>
+                    <dd>description here<br>and here</dd>
+                </dl>
+                <p id="ilist">Ordered List (Numbers)!</p>
+                <ol>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                </ol>
+                <p id="ilist">Unordered List (Bullet Points)!</p>
+                <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                </ul>
+            </div>
+            
+            <div class="cimages">
+                <h2><a id="imgs">Images!</a></h2>
+                <br>
+                <p id="fright">
+                    <a href="images/lakeside_IG.png"><img src="images/lakeside_IG.png" alt="Lakeside" title="Picture from game not IRL"></a> <!--Relative Path (local file)-->
+                </p>
+                <p id="cfright">
+                    <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Lakeside%2C_AZ.jpg/250px-Lakeside%2C_AZ.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Lakeside%2C_AZ.jpg/250px-Lakeside%2C_AZ.jpg" alt="Lakeside" title="Lakeside picture from Wikimedia"></a> <!--Absolute Path (web file)-->
+                </p>
+                <br>                
+            </div>
+            
+            <div class="ctables">
+                <h2><a id="tbl">Table!</a></h2>
+                <table style="width:500px; height:100px">
+                    <caption>This is a table!</caption>
+                    <thead>
+                        <tr>
+                            <td colspan="100%">This is the header of the table!</td>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <th>Desc 1</th>
+                        <th>Thing</th>
+                        <th>1</th>
+                        <th>Ayyy</th>
+                    </tr>
+                    <tr>
+                        <th>Desc 2</th>
+                        <th>Thing</th>
+                        <th>2</th>
+                        <th>Ayyy</th>
+                    </tr>
+                    <tfoot>
+                        <tr>
+                            <td colspan="100%">This is the footer of the table!</td>
+                        </tr>
+                    </tfoot>
+                </table> 
+            </div>
+
+            <div class="cmagic">
+                <p>wowww this is crazyyy, magic!!!</p>
+            </div>
+
+            <div class="inherit" style="color:red">
+                <p>redredred <span>redredred </span>redredred</p>
+            </div>
+            <div style="color:red">
+                <p>redredred <span>redredred </span>redredred</p>
+            </div>
+
+            <a href="#main" weblink="self"><br>Go to top</a>
+            <a href="#lists" weblink="self"><br>Go to lists</a>
+            <a href="#imgs" weblink="self"><br>Go to images</a>
+            <a href="#tbl" weblink="self"><br>Go to table</a>
+
+            <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible -->
+
+            <!--Little bit of Javascript-->
+            <script>
+                /* pretty sure coll var gets the class to be able to alter its data or something like that */
+                var coll = document.getElementsByClassName("collapse"); 
+                var i;
+
+                for (i = 0; i < coll.length; i++){
+
+                /* believe the click part is saying to toggle the active state when pressed */    
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block"){
+                    content.style.display = "none";
+                    } else{
+                    content.style.display = "block";
+                    }
+                });
+                }
+            </script>
+
+        </article>
+    </body>
+
+</html>

@@ -1,0 +1,74 @@
+<!--Matthew Sandberg-->
+<!--Joseph Jess-->
+<!--CS 290-->
+<!--16 JAN 2023-->
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>           
+        <meta charset="UTF-8">
+        <meta charset="description" content="Crazy Broski 2: now in full color">
+        <meta charset="keywords" content="HTML">
+        <meta charset="author" content="Matthew Sandberg">
+        <meta charset="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="style.css"> <!--Clean up by putting styles into another file-->
+
+        <title>Subpage</title>
+
+        <script>
+            alert('you cant load without me gone!!!')
+        </script>
+
+    </head>
+
+    <body>
+        <article>
+            <header>
+                <h1><a id="main">CS 290 HTML</a></h1>
+                <p>Thanks to Joseph Jess, W3Schools, and Geeks for Geeks!</p>
+                <a href="https://www.w3schools.com/" weblink>Link to W3Schools for references to some code</a>
+                <br>
+                <a href="https://www.geeksforgeeks.org/" weblink>Link to Geeks for Geeks for references to some code</a>
+                <br>
+                <br>
+                <h3><a href="terribleMain.html" weblink>Back to main webpage</a></h3>
+            </header>   
+            
+            <form action="hello.php" method="get">
+                <br>
+                <h4>!!!this section don't work at the moment and idk why still try it out though!!!</h4>
+                <h3>Name:<input type="text" name="name" id="name"></h3>
+                <h3>Favourite Color:<input type="text" name="color"></h3> 
+                <p>Click Submit or press Enter to see what happens!</p>               
+                <input type="submit">
+                <br>
+                <h4>!!!this section don't work at the moment and idk why still try it out though!!!</h4>
+            </form>
+
+            <div class="calc">
+                <h4>Number One:<input type="text" name="numOne" id="numOne"></h4>
+                <br>
+                <h4>Number Two:<input type="text" name="numTwo" id="numTwo"></h4>
+                <br>
+                
+                <select id="ops">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+
+                <input type="text" id="result">
+                <button onclick="calculate();">Result:</button>
+            </div>
+
+            <a href="#main" weblink="self"><br>Go to top</a>
+        </article>
+
+        <!--Javascript stuff in script-->
+        <script src="scripts.js"></script>
+    </body>
+
+</html>
