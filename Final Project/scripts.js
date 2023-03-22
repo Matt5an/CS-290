@@ -1,6 +1,6 @@
-function calc(){
-    var numOne = document.getElementById('numOne').value;
-    var numOne = document.getElementById('numTwo').value;
+function calculate(){
+    var numOne = parseFloat(document.getElementById('numOne').value);
+    var numTwo = parseFloat(document.getElementById('numTwo').value);
     var operator = document.getElementById('ops').value;
 
     if(operator === '+'){
